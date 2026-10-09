@@ -1,0 +1,274 @@
+/*==========================
+BANNER
+===========================*/
+
+.banner-nosotros{
+    background: linear-gradient(135deg,#FDE9EF,#FFF8FA);
+    text-align: center;
+    padding: 220px 20px 110px;
+}
+
+.banner-nosotros h1{
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    color:#681D34;
+    margin-bottom:20px;
+}
+
+.banner-nosotros p{
+    font-size:18px;
+    color:#555;
+}
+
+
+/*==========================
+HISTORIA
+===========================*/
+
+.historia{
+
+    width:90%;
+    margin:100px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.historia-img{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.historia-img img{
+
+    width:350px;
+
+    height:350px;
+
+    object-fit:contain;
+
+    background:#FCE7EF;
+
+    padding:25px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(104,29,52,.18);
+
+}
+
+.historia-texto span{
+
+    font-family:'Parisienne',cursive;
+
+    color:#F59AB5;
+
+    font-size:42px;
+
+}
+
+.historia-texto h2{
+
+    font-family:'Playfair Display',serif;
+
+    color:#681D34;
+
+    font-size:50px;
+
+    margin:20px 0;
+
+}
+
+.historia-texto p{
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+    font-size:17px;
+
+}
+
+
+/*==========================
+MISIÓN Y VISIÓN
+===========================*/
+
+.mision-vision{
+
+    width:90%;
+
+    margin:100px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.card{
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    border:2px solid #F7D8E2;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h2{
+
+    color:#681D34;
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+
+/*==========================
+VALORES
+===========================*/
+
+.valores{
+
+    background:#FFF7FA;
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+.valores h2{
+
+    font-family:'Playfair Display',serif;
+
+    color:#681D34;
+
+    font-size:50px;
+
+    margin-bottom:60px;
+
+}
+
+.contenedor-valores{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.valor{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.valor:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.valor h3{
+
+    color:#681D34;
+
+    margin-bottom:15px;
+
+    font-size:25px;
+
+}
+
+.valor p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/*==========================
+RESPONSIVE
+===========================*/
+
+@media(max-width:900px){
+
+.banner-nosotros h1{
+
+font-size:42px;
+
+}
+
+.historia{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.historia-img img{
+
+width:260px;
+
+height:260px;
+
+}
+
+.mision-vision{
+
+grid-template-columns:1fr;
+
+}
+
+}

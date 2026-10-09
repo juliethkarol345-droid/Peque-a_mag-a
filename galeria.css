@@ -1,0 +1,91 @@
+/*=========================
+BANNER
+=========================*/
+
+.banner-galeria{
+
+    background:linear-gradient(135deg,#FCE7EF,#FFF8FA);
+
+    padding:160px 20px 90px;
+
+    text-align:center;
+
+}
+
+.banner-galeria h1{
+
+    font-family:'Playfair Display',serif;
+
+    color:#681D34;
+
+    font-size:55px;
+
+}
+
+.banner-galeria p{
+
+    margin-top:20px;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/*=========================
+GALERIA
+=========================*/
+
+.galeria{
+
+    width:90%;
+
+    margin:90px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.foto{
+
+    background:#fff;
+
+    padding:15px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.foto:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.foto img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+}
+
+.foto:hover img{
+
+    transform:scale(1.05);
+
+}

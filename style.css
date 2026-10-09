@@ -1,0 +1,457 @@
+/*=========================================
+        VARIABLES
+==========================================*/
+
+:root{
+
+    --vino:#4A202A;
+    --vino-oscuro:#76172C;
+    --rosa:#D86487;
+    --rosa-claro:#F6AFC6;
+    --beige:#F1DFDD;
+    --blanco:#FFFFFF;
+    --gris:#666666;
+    --negro:#222222;
+
+    --sombra:0px 10px 30px rgba(0,0,0,.08);
+
+    --radio:25px;
+
+    --transicion:.4s;
+
+}
+
+
+
+/*=========================================
+        RESET
+==========================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--blanco);
+    color:var(--negro);
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+/*=========================================
+        CONTENEDOR
+==========================================*/
+
+.container{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+}
+
+
+
+/*=========================================
+        TITULOS
+==========================================*/
+
+h1{
+
+    font-size:65px;
+    line-height:75px;
+
+}
+
+h2{
+
+    font-size:45px;
+
+}
+
+h3{
+
+    font-size:24px;
+
+}
+
+p{
+
+    color:var(--gris);
+    line-height:30px;
+
+}
+
+
+
+/*=========================================
+        BOTONES
+==========================================*/
+
+.btn-principal{
+
+    display:inline-block;
+
+    background:var(--vino);
+
+    color:white;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+    box-shadow:var(--sombra);
+
+}
+
+.btn-principal:hover{
+
+    background:var(--rosa);
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.btn-secundario{
+
+    display:inline-block;
+
+    border:2px solid var(--vino);
+
+    color:var(--vino);
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    margin-left:15px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.btn-secundario:hover{
+
+    background:var(--vino);
+
+    color:white;
+
+}
+
+
+
+/*=========================================
+        HEADER
+==========================================*/
+
+.header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    padding:20px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(15px);
+
+    z-index:999;
+
+    transition:.4s;
+
+}
+
+
+
+/*=========================
+LOGO
+=========================*/
+
+.logo a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+}
+
+.logo img{
+
+    width:150px;
+
+}
+
+.logo-texto h2{
+
+    font-family:'ChasingHearts-Regular';
+
+    font-size:34px;
+
+    color:#681D34;
+
+    margin:0;
+
+}
+
+.logo-texto p{
+
+    margin-top:3px;
+
+    font-size:13px;
+
+    color:#A35A73;
+
+    letter-spacing:1px;
+
+}
+
+
+nav ul{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+
+
+nav ul li a{
+
+    color:var(--vino);
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--rosa);
+
+    left:0;
+
+    bottom:-8px;
+
+    transition:.4s;
+
+}
+
+
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+.btn-header{
+
+    background:var(--vino);
+
+    color:white;
+
+    padding:15px 28px;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+
+
+.btn-header:hover{
+
+    background:var(--rosa);
+
+}
+
+
+
+/*=========================================
+        TITULOS DE SECCION
+==========================================*/
+
+.titulo-seccion{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+
+
+.titulo-seccion span{
+
+    color:var(--rosa);
+
+    font-family:'Parisienne',cursive;
+
+    font-size:35px;
+
+}
+
+
+
+.titulo-seccion h2{
+
+    margin-top:10px;
+
+    color:var(--vino);
+
+}
+
+
+
+.titulo-seccion p{
+
+    width:650px;
+
+    margin:20px auto;
+
+}
+
+
+
+/*=========================================
+        TARJETAS
+==========================================*/
+
+.card{
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-15px);
+
+}
+
+
+
+.card img{
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+
+
+.contenido-card{
+
+    padding:30px;
+
+}
+
+
+
+.categoria{
+
+    color:var(--rosa);
+
+    font-weight:600;
+
+    font-size:14px;
+
+}
+
+
+
+.btn-card{
+
+    margin-top:20px;
+
+    display:inline-block;
+
+    color:var(--vino);
+
+    font-weight:600;
+
+}

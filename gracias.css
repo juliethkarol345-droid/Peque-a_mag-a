@@ -1,0 +1,97 @@
+/*=========================
+GRACIAS
+=========================*/
+
+body{
+
+    margin:0;
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#FDE9EF,#FFF8FA);
+
+}
+
+.gracias{
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.contenido{
+
+    width:650px;
+
+    background:white;
+
+    text-align:center;
+
+    padding:60px;
+
+    border-radius:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+}
+
+.contenido img{
+
+    width:130px;
+
+    margin-bottom:25px;
+
+}
+
+.contenido h1{
+
+    font-family:'Playfair Display',serif;
+
+    color:#681D34;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.contenido p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.contenido a{
+
+    display:inline-block;
+
+    padding:15px 45px;
+
+    background:#681D34;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+.contenido a:hover{
+
+    background:#F59AB5;
+
+}
